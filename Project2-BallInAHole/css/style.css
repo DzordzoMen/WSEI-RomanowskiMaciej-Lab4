@@ -1,0 +1,40 @@
+canvas{
+  width: 100vw;
+  height: 100vh;
+}
+
+body{
+  margin: 0;
+  overflow: hidden;
+}
+html{
+  height: 100%;
+}
+
+.time{
+  background-color: #9ac457;
+}
+.time::before{
+  content: "Aktualny czas: ";
+}
+.time::after{
+  content: " sekund";
+}
+
+.win{
+  width: 50%;
+  margin: 200px auto;
+  display: none;
+  color: green;
+  font-size: 2rem;
+  font-family:sans-serif;
+}
+
+.end{
+  width: 50%;
+  margin: 200px auto;
+  display: none;
+  color: #e65e3b;
+  font-size: 2rem;
+  font-family:sans-serif;
+}
