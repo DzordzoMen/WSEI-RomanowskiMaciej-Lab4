@@ -43,7 +43,7 @@ function changeContrast(factor) {
   let imageData = ctx.getImageData(0, 0, canva.width, canva.height);
   let contrast = (factor/100) + 1;
   let intercept = 128 * (1 - contrast);
-  for(let i = 0; i < imageData.data.length; i += 4){
+  for(let i = 0; i < imageData.data.length; i += 4) {
     imageData.data[i]   = Math.min(255, imageData.data[i] * contrast + intercept);
     imageData.data[i+1] = Math.min(255, imageData.data[i+1] * contrast + intercept);
     imageData.data[i+2] = Math.min(255, imageData.data[i+2] * contrast + intercept);
@@ -53,7 +53,7 @@ function changeContrast(factor) {
 
 function changeSaturation(factor) {
   let imageData = ctx.getImageData(0, 0, canva.width, canva.height);
-  for(let i = 0; i < imageData.data.length; i += 4){
+  for(let i = 0; i < imageData.data.length; i += 4) {
     imageData.data[i] = Math.min(255, imageData.data[i] - factor);
   }
   ctx.putImageData(imageData, 0, 0);
