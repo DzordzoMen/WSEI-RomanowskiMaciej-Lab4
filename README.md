@@ -1,1 +1,1 @@
-# WSEI-JS
+# WSEI-JS Zadania
