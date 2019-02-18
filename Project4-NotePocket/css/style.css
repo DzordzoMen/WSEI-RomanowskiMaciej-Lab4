@@ -1,0 +1,147 @@
+body {
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+  /* background-color: rgba(64,150,238,1); */
+  background-color: #EFE2BA;
+}
+
+#top {
+  background: linear-gradient(to bottom, #EFE2BA 8%,#EFE2BA 21%,#EFE2BA 86%);
+  position: absolute;
+  width: 100%;
+  height: 180px;
+}
+
+#top h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+#buttonAddNote {
+  position: relative;
+  border: 6px solid #4056A1;
+  border-radius: 30%;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  background-color: #C5CBE3;
+  font-weight: 900;
+  top: 200px;
+  left: 50px;
+}
+
+#popUpWindowWithForm {
+  position: absolute;
+  border: 3px solid #4056A1;
+  width: 300px;
+  height: 400px;
+  background-color: #D79922;
+  left:50%;
+  margin-left:-8%;
+  display: none;
+  z-index: 15;
+}
+
+form {
+  position: static;
+}
+
+form input {
+  display: block;
+  text-align: center;
+  width: 200px;
+  margin: 50px;
+}
+
+form select {
+  margin: 50px;
+  width: 200px;
+}
+
+#submitButton {
+  border: 2px solid #4056A1;
+  background-color: #C5CBE3;
+  border-radius: 5%;
+}
+
+#tasks {
+  /* border: 4px solid red; */
+  /* position: relative; */
+  height: auto;
+  width: 450px;
+  margin: auto;
+  top:300px;
+  padding: 15px;
+  line-height: 50%;
+}
+
+.task {
+  /* border: 4px solid blue; */
+  margin: 15px;
+  padding: 15px;
+  background-color: aliceblue;
+  position: relative;
+}
+
+.task h2::before {
+  content: "Tytuł: ";
+  color: rgb(23, 44, 114);
+}
+
+.task h3 {
+  padding-top: 3px;
+  margin-left: 10px;
+}
+
+.task h3::before {
+  content: "Treść: ";
+  color: rgb(23, 44, 114);
+}
+
+.task h4 {
+  text-align: right;
+}
+
+.task h4::before {
+  content: "Data: ";
+  color: rgb(23, 44, 114);
+}
+
+.exit1, .exit2 {
+  width: 20px;
+  height: 5px;
+  position: relative;
+  background-color: black;
+}
+
+.exit1 {
+  transform: rotate(45deg);
+}
+
+.exit2 {
+  transform: rotate(-45deg);
+  bottom: 5px;
+}
+
+.exitbutton {
+  right: 0px;
+}
+
+.pinontop {
+  position: relative;
+  margin-left: 300px;
+  border: 2px solid #4056A1;
+  padding: 2px;
+  width: 80px;
+  height: 40px;
+  line-height: 20px;
+  font-weight: 900;
+  background-color: #C5CBE3;
+  border-radius: 10%;
+}
+
+.task:first-child {
+  border: 6px solid #F13C20;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NotePocket v1,0</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <header id="top">
+    <h1>NotePocket</h1>
+  </header>  
+  <main>
+    <div id="buttonAddNote">
+      <p>Dodaj notatke</p>
+    </div>
+    <!-- formularz do dodawania notatek -->
+    <div id="popUpWindowWithForm">
+      <form>
+        <input type="text" name="title" id="title" placeholder="Podaj tytuł notatki">
+        <input type="text" name="content" id="content" placeholder="Podaj treść notatki.">
+        <select>
+          <option value="blueviolet">Fioletowy</option>
+          <option value="green">Zielony</option>
+          <option value="blue">Niebieski</option>
+          <option value="orange">Pomarańczowy</option>
+          <option value="yellow">Żółty</option>
+        </select>
+        <input type="submit" value="Wyślij" id="submitButton">
+      </form>
+    </div>
+    
+    <!-- kontener na notatki -->
+    <div id="tasks">
+      
+    </div>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html>
