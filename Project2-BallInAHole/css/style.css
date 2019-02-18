@@ -1,27 +1,27 @@
-canvas{
+canvas {
   width: 100vw;
   height: 100vh;
 }
 
-body{
+body {
   margin: 0;
   overflow: hidden;
 }
-html{
+html {
   height: 100%;
 }
 
-.time{
+.time {
   background-color: #9ac457;
 }
-.time::before{
+.time::before {
   content: "Aktualny czas: ";
 }
-.time::after{
+.time::after {
   content: " sekund";
 }
 
-.win{
+.win {
   width: 50%;
   margin: 200px auto;
   display: none;
@@ -30,7 +30,7 @@ html{
   font-family:sans-serif;
 }
 
-.end{
+.end {
   width: 50%;
   margin: 200px auto;
   display: none;
